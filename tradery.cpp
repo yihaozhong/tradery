@@ -8,22 +8,21 @@
 class Tradery {
 public:
     Tradery() {
-        // Initialize components such as order book, market data, FIX engine
+        // Initialize components
     }
     
     void start() {
-        // Start the trading system, fetch market data, and process orders
+        // Start the trading system
     }
 };
 
-// OrderBook class
-class OrderBook {
-    // Lock-free data structures and memory pooling can be implemented here
+// OptionOrderBook class
+class OptionOrderBook {
 public:
     void addOrder(/*order details*/) {
         // Add order to the book
     }
-    `
+    
     void matchOrder(/*order details*/) {
         // Match orders and execute trades
     }
@@ -33,7 +32,7 @@ public:
 class MarketData {
 public:
     void fetch() {
-        // Fetch market data from providers using FIX or other protocols
+        // Fetch market data from providers
     }
 };
 
@@ -41,7 +40,16 @@ public:
 class FixEngine {
 public:
     void sendMessage(/*message details*/) {
-        // Send FIX messages using quickfix or fix8
+        // Send FIX messages
+    }
+};
+
+// OptionPricer class
+class OptionPricer {
+public:
+    double calculate(/*option parameters*/) {
+        // Calculate option price using Black-Scholes or another model
+        return 0.0; // Placeholder
     }
 };
 
